@@ -45,7 +45,7 @@ $ ./testing_Chip8 ROMs/ROM-NAME-HERE
 The ROMs are included in the `ROMs` directory.
 
 ## References
-Resources and special thanks:
+Resources used to bring this project to life, and special thanks:
 
 - http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/
 - http://devernay.free.fr/hacks/chip8/C8TECH10.HTM
