@@ -1,0 +1,669 @@
+Allocation successful!
+
+The file content is now in memory...
+000 1225 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+002 5350 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+004 4143 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+006 4520 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+008 494E 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+010 5641 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+012 4445 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+014 5253 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+016 2030 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+018 2E39 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+020 3120 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+022 4279 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+024 2044 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+026 6176 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+028 6964 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+030 2057 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+032 494E 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+034 5445 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+036 5260 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+038 61 Unknown opcode...
+040 62 Unknown opcode...
+042 8A3 Unknown opcode...
+044 DDD0 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+046 1871 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+048 8F2 Unknown opcode...
+050 1E31 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+052 2012 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+054 2D70 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+056 861 Unknown opcode...
+058 30 00E0 - CLS: Clear the display
+060 4012 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+062 2D69 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+064 56C Unknown opcode...
+066 156E 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+068 23 Unknown opcode...
+070 9160 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+072 AF0 00E0 - CLS: Clear the display
+074 15F0 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+076 730 00E0 - CLS: Clear the display
+078 12 Unknown opcode...
+080 4B23 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+082 917E 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+084 112 Unknown opcode...
+086 4566 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+088 68 Unknown opcode...
+090 1C69 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+092 6A Unknown opcode...
+094 46B Unknown opcode...
+096 A6C Unknown opcode...
+098 46D Unknown opcode...
+100 3C6E 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+102 F00 00E0 - CLS: Clear the display
+104 E023 
+106 7523 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+108 51FD 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+110 1560 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+112 4E0 00E0 - CLS: Clear the display
+114 9E12 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+116 7D23 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+118 7538 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+120 78 Unknown opcode...
+122 FF23 
+124 7560 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+126 6E0 00E0 - CLS: Clear the display
+128 9E12 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+130 8B23 8xy3 - XOR Vx, Vy: Set Vx = Vx XOR Vy; Performs a bitwise exclusive OR on the values of Vx and Vy, then stores the result in Vx.
+132 7538 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+134 3978 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+136 123 Unknown opcode...
+138 7536 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+140 12 Unknown opcode...
+142 9F60 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+144 5E0 00E0 - CLS: Clear the display
+146 9E12 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+148 E966 
+150 165 Unknown opcode...
+152 1B84 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+154 80A3 8xy3 - XOR Vx, Vy: Set Vx = Vx XOR Vy; Performs a bitwise exclusive OR on the values of Vx and Vy, then stores the result in Vx.
+156 D9D4 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+158 51A3 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+160 D9D4 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+162 5175 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+164 FF35 
+166 FF12 
+168 AD66 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+170 12 Unknown opcode...
+172 E9D4 
+174 513F 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+176 112 Unknown opcode...
+178 E9D4 
+180 5166 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+182 83 Unknown opcode...
+184 4073 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+186 383 Unknown opcode...
+188 B562 Bnnn - JP V0, addr: Jump to location nnn + V0; The pc is set to nnn plus the value of V0.
+190 F883 
+192 2262 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+194 833 Unknown opcode...
+196 12 Unknown opcode...
+198 C923 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+200 7D82 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+202 643 Unknown opcode...
+204 812 Unknown opcode...
+206 D333 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+208 1012 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+210 D523 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+212 7D82 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+214 633 Unknown opcode...
+216 1812 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+218 DD23 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+220 7D82 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+222 643 Unknown opcode...
+224 2012 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+226 E733 
+228 2812 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+230 E923 
+232 7D3E 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+234 13 Unknown opcode...
+236 779 Unknown opcode...
+238 649 Unknown opcode...
+240 1869 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+242 6A Unknown opcode...
+244 46B Unknown opcode...
+246 A6C Unknown opcode...
+248 47D Unknown opcode...
+250 F46E 
+252 F00 00E0 - CLS: Clear the display
+254 E023 
+256 5123 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+258 75FD 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+260 1512 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+262 6FF7 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+264 737 Unknown opcode...
+266 12 Unknown opcode...
+268 6FFD 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+270 1523 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+272 518B 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+274 A43B Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+276 1213 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+278 1B7C 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+280 26A Unknown opcode...
+282 FC3B 
+284 213 Unknown opcode...
+286 237C 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+288 26A Unknown opcode...
+290 423 Unknown opcode...
+292 513C 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+294 1812 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+296 6F00 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+298 E0A4 
+300 DD60 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+302 1461 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+304 862 Unknown opcode...
+306 FD0 00E0 - CLS: Clear the display
+308 1F70 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+310 8F2 Unknown opcode...
+312 1E30 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+314 2C13 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+316 3360 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+318 FFF0 
+320 15F0 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+322 730 00E0 - CLS: Clear the display
+324 13 Unknown opcode...
+326 41F0 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+328 A00 00E0 - CLS: Clear the display
+330 E0A7 
+332 6FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+334 6512 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+336 25A3 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+338 C1F9 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+340 1E61 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+342 823 Unknown opcode...
+344 6981 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+346 623 Unknown opcode...
+348 6981 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+350 623 Unknown opcode...
+352 6981 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+354 623 Unknown opcode...
+356 697B 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+358 D000 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+360 EE80 
+362 E080 
+364 1230 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+366 DB Unknown opcode...
+368 C67B Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+370 C00 00E0 - CLS: Clear the display
+372 EEA3 
+374 D960 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+376 1CD8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+378 400 00E0 - CLS: Clear the display
+380 EE23 
+382 518E 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+384 2323 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+386 5160 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+388 5F0 00E0 - CLS: Clear the display
+390 18F0 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+392 15F0 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+394 730 00E0 - CLS: Clear the display
+396 13 Unknown opcode...
+398 8900 8xy0 - LD Vx, Vy: Set Vx = Vy; Stores the value of register Vy in register Vx
+400 EE6A 
+402 8D Unknown opcode...
+404 E06B 
+406 4E9 Unknown opcode...
+408 A112 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+410 57A6 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+412 CFD Unknown opcode...
+414 1EF0 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+416 6530 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+418 FF13 
+420 AF6A Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+422 6B Unknown opcode...
+424 46D Unknown opcode...
+426 16E 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+428 113 Unknown opcode...
+430 97A5 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+432 AF0 00E0 - CLS: Clear the display
+434 1EDB 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+436 C67B Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+438 87D Unknown opcode...
+440 17A Unknown opcode...
+442 13A Unknown opcode...
+444 713 Unknown opcode...
+446 9700 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+448 EE3C 
+450 7EFF 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+452 FF99 
+454 997E 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+456 FFFF 
+458 2424 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+460 E77E Ex9E - SKP Vx: Skip next instruction if key with the value of Vx is pressed (checks keyboard), pc is increased by 2.
+462 FF3C 
+464 3C7E 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+466 DB81 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+468 423C 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+470 7EFF 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+472 DB10 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+474 387C 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+476 FE00 
+478 7F Unknown opcode...
+480 3F Unknown opcode...
+482 7F Unknown opcode...
+484 0 00E0 - CLS: Clear the display
+486 1 Unknown opcode...
+488 101 Unknown opcode...
+490 303 Unknown opcode...
+492 303 Unknown opcode...
+494 0 00E0 - CLS: Clear the display
+496 3F20 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+498 2020 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+500 2020 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+502 2020 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+504 203F 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+506 808 Unknown opcode...
+508 FF00 
+510 FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+512 FC Unknown opcode...
+514 FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+516 0 00E0 - CLS: Clear the display
+518 7E 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+520 4242 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+522 6262 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+524 6262 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+526 0 00E0 - CLS: Clear the display
+528 FF00 
+530 0 00E0 - CLS: Clear the display
+532 0 00E0 - CLS: Clear the display
+534 0 00E0 - CLS: Clear the display
+536 FF Unknown opcode...
+538 0 00E0 - CLS: Clear the display
+540 FF00 
+542 7D00 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+544 417D 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+546 57D Unknown opcode...
+548 7D00 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+550 C2 Unknown opcode...
+552 C2C6 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+554 446C 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+556 2838 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+558 0 00E0 - CLS: Clear the display
+560 FF00 
+562 0 00E0 - CLS: Clear the display
+564 0 00E0 - CLS: Clear the display
+566 0 00E0 - CLS: Clear the display
+568 FF Unknown opcode...
+570 0 00E0 - CLS: Clear the display
+572 FF00 
+574 F710 
+576 14F7 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+578 F704 
+580 400 00E0 - CLS: Clear the display
+582 7C Unknown opcode...
+584 44FE 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+586 C2C2 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+588 C2C2 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+590 0 00E0 - CLS: Clear the display
+592 FF00 
+594 0 00E0 - CLS: Clear the display
+596 0 00E0 - CLS: Clear the display
+598 0 00E0 - CLS: Clear the display
+600 FF Unknown opcode...
+602 0 00E0 - CLS: Clear the display
+604 FF00 
+606 EF20 
+608 28E8 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+610 E82F 
+612 2F00 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+614 F9 Unknown opcode...
+616 85C5 8xy5 - SUB Vx, Vy: Set Vx = Vx - Vy, set VF = NOT borrow; If Vx > Vy, then VF is set to 1, otherwise 0. Then Vy is subtracted from Vx, and result stored in Vx.
+618 C5C5 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+620 C5F9 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+622 0 00E0 - CLS: Clear the display
+624 FF00 
+626 0 00E0 - CLS: Clear the display
+628 0 00E0 - CLS: Clear the display
+630 0 00E0 - CLS: Clear the display
+632 FF Unknown opcode...
+634 0 00E0 - CLS: Clear the display
+636 FF00 
+638 BE00 Bnnn - JP V0, addr: Jump to location nnn + V0; The pc is set to nnn plus the value of V0.
+640 2030 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+642 20BE 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+644 BE00 Bnnn - JP V0, addr: Jump to location nnn + V0; The pc is set to nnn plus the value of V0.
+646 F7 Unknown opcode...
+648 4E7 Unknown opcode...
+650 8585 8xy5 - SUB Vx, Vy: Set Vx = Vx - Vy, set VF = NOT borrow; If Vx > Vy, then VF is set to 1, otherwise 0. Then Vy is subtracted from Vx, and result stored in Vx.
+652 84F4 8xy4 - Add Vx, Vy: Set Vx = Vx + Vy, set VF = carry; The values of Vx and Vy are added together. 
+If the result is greater than 8 bits (i.e., > 255) VF is set to 1, otherwise 0. Only lowest 8 bits of result are kept, and stored in Vx.
+654 0 00E0 - CLS: Clear the display
+656 FF00 
+658 0 00E0 - CLS: Clear the display
+660 0 00E0 - CLS: Clear the display
+662 0 00E0 - CLS: Clear the display
+664 FF Unknown opcode...
+666 0 00E0 - CLS: Clear the display
+668 FF00 
+670 7F Unknown opcode...
+672 3F Unknown opcode...
+674 7F Unknown opcode...
+676 0 00E0 - CLS: Clear the display
+678 EF Unknown opcode...
+680 28EF 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+682 E0 00E0 - CLS: Clear the display
+684 606F 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+686 0 00E0 - CLS: Clear the display
+688 FF00 
+690 0 00E0 - CLS: Clear the display
+692 0 00E0 - CLS: Clear the display
+694 0 00E0 - CLS: Clear the display
+696 FF Unknown opcode...
+698 0 00E0 - CLS: Clear the display
+700 FF00 
+702 FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+704 FC Unknown opcode...
+706 FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+708 0 00E0 - CLS: Clear the display
+710 C0 00E0 - CLS: Clear the display
+712 C0 00E0 - CLS: Clear the display
+714 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+716 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+718 0 00E0 - CLS: Clear the display
+720 FC04 
+722 404 Unknown opcode...
+724 404 Unknown opcode...
+726 404 Unknown opcode...
+728 4FC Unknown opcode...
+730 1010 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+732 FFF9 
+734 81B9 
+736 8B9A 
+738 9AFA 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+740 FA Unknown opcode...
+742 8A9A 
+744 9A9B 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+746 99F8 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+748 E625 
+750 25F4 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+752 3434 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+754 3400 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+756 1714 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+758 3437 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+760 3626 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+762 C7DF Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+764 5050 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+766 5CD8 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+768 D8DF Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+770 DF Unknown opcode...
+772 111F 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+774 121B 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+776 19D9 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+778 7C44 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+780 FE86 
+782 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+784 FC84 
+786 FE82 
+788 82FE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+790 FE80 
+792 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+794 C0FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+796 FC82 
+798 C2C2 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+800 C2FC Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+802 FE80 
+804 F8C0 
+806 C0FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+808 FE80 
+810 F0C0 
+812 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+814 FE80 
+816 BE86 Bnnn - JP V0, addr: Jump to location nnn + V0; The pc is set to nnn plus the value of V0.
+818 86FE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+820 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+822 FE86 
+824 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+826 1010 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+828 1010 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+830 1010 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+832 1818 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+834 1848 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+836 4878 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+838 9C90 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+840 B0C0 Bnnn - JP V0, addr: Jump to location nnn + V0; The pc is set to nnn plus the value of V0.
+842 B09C Bnnn - JP V0, addr: Jump to location nnn + V0; The pc is set to nnn plus the value of V0.
+844 8080 8xy0 - LD Vx, Vy: Set Vx = Vy; Stores the value of register Vy in register Vx
+846 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+848 C0FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+850 EE92 
+852 9286 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+854 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+856 FE82 
+858 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+860 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+862 7C82 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+864 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+866 867C 
+868 FE82 
+870 FEC0 
+872 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+874 7C82 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+876 C2CA Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+878 C47A Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+880 FE86 
+882 FE90 
+884 9C84 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+886 FEC0 
+888 FE02 
+890 2FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+892 FE10 
+894 3030 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+896 3030 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+898 8282 8xy2 - AND Vx, Vy: Set Vx = Vx AND Vy; Performs a bitwise AND on the values of Vx and Vy, then stores the result in Vx.
+900 C2C2 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+902 C2FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+904 8282 8xy2 - AND Vx, Vy: Set Vx = Vx AND Vy; Performs a bitwise AND on the values of Vx and Vy, then stores the result in Vx.
+906 82EE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+908 3810 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+910 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+912 9692 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+914 92EE 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+916 8244 8xy4 - Add Vx, Vy: Set Vx = Vx + Vy, set VF = carry; The values of Vx and Vy are added together. 
+If the result is greater than 8 bits (i.e., > 255) VF is set to 1, otherwise 0. Only lowest 8 bits of result are kept, and stored in Vx.
+918 3838 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+920 4482 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+922 8282 8xy2 - AND Vx, Vy: Set Vx = Vx AND Vy; Performs a bitwise AND on the values of Vx and Vy, then stores the result in Vx.
+924 FE30 
+926 3030 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+928 FE02 
+930 1EF0 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+932 80FE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+934 0 00E0 - CLS: Clear the display
+936 0 00E0 - CLS: Clear the display
+938 606 Unknown opcode...
+940 0 00E0 - CLS: Clear the display
+942 60 00E0 - CLS: Clear the display
+944 60C0 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+946 0 00E0 - CLS: Clear the display
+948 0 00E0 - CLS: Clear the display
+950 0 00E0 - CLS: Clear the display
+952 1818 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+954 1818 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+956 18 Unknown opcode...
+958 7CC6 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+960 C18 Unknown opcode...
+962 18 Unknown opcode...
+964 0 00E0 - CLS: Clear the display
+966 FEFE 
+968 0 00E0 - CLS: Clear the display
+970 FE82 
+972 8686 8xy6 - Vx = Vy >> 1: Shifts Vy right by one and stores result in Vx (Vy remains unchanged). VF is set to value of least significant bit of Vy before the shift.
+974 86FE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+976 808 Unknown opcode...
+978 818 Unknown opcode...
+980 1818 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+982 FE02 
+984 FEC0 
+986 C0FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+988 FE02 
+990 1E06 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+992 6FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+994 84C4 8xy4 - Add Vx, Vy: Set Vx = Vx + Vy, set VF = carry; The values of Vx and Vy are added together. 
+If the result is greater than 8 bits (i.e., > 255) VF is set to 1, otherwise 0. Only lowest 8 bits of result are kept, and stored in Vx.
+996 C4FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+998 404 Unknown opcode...
+1000 FE80 
+1002 FE06 
+1004 6FE 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+1006 C0C0 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+1008 C0FE Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+1010 82FE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+1012 FE02 
+1014 206 Unknown opcode...
+1016 606 Unknown opcode...
+1018 7C44 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1020 FE86 
+1022 86FE 8xyE - SHL Vx {, Vy}: Set Vx = Vx SHL 1; If the most-signigicant bit of Vx is 1, then VF is set to 1, otherwise 0. Then Vx is multiplied by 2.
+1024 FE82 
+1026 FE06 
+1028 606 Unknown opcode...
+1030 44FE 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1032 4444 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1034 FE44 
+1036 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1038 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1040 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1042 A86C Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1044 5A00 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1046 C18 Unknown opcode...
+1048 A830 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1050 4E7E 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1052 12 Unknown opcode...
+1054 1866 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1056 6CA8 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1058 5A66 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1060 5424 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1062 6600 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1064 4848 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1066 1812 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1068 A806 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1070 90A8 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+1072 1200 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1074 7E30 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1076 12A8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1078 8430 8xy0 - LD Vx, Vy: Set Vx = Vy; Stores the value of register Vy in register Vx
+1080 4E72 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1082 1866 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1084 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1086 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1088 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1090 9054 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+1092 78A8 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1094 4878 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1096 6C72 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1098 A812 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1100 186C 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1102 7266 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1104 5490 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1106 A872 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1108 2A18 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+1110 A830 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1112 4E7E 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1114 12 Unknown opcode...
+1116 1866 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1118 6CA8 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1120 7254 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1122 A85A Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1124 6618 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1126 7E18 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1128 4E72 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1130 A872 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1132 2A18 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+1134 3066 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+1136 A830 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1138 4E7E 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1140 6C Unknown opcode...
+1142 3054 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+1144 4E9C 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1146 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1148 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1150 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1152 A848 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1154 547E 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1156 18A8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1158 9054 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+1160 7866 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1162 A86C Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1164 2A30 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+1166 5AA8 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1168 8430 8xy0 - LD Vx, Vy: Set Vx = Vy; Stores the value of register Vy in register Vx
+1170 722A 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1172 A8D8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1174 A800 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1176 4E12 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1178 A8E4 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1180 A2A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1182 4E 00EE - RET: Return from a subroutine; Interpreter sets pc to the address at the top of the stack, then subtracks 1 from sp.
+1184 12A8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1186 6C2A 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1188 5454 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1190 72A8 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1192 8430 8xy0 - LD Vx, Vy: Set Vx = Vy; Stores the value of register Vy in register Vx
+1194 722A 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1196 A8DE Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1198 9CA8 9xy0 - SNE Vx, Vy: Skip next instruction if Vx !=  Vy (increments pc by 2)
+1200 722A 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1202 18A8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1204 C54 Unknown opcode...
+1206 485A 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1208 7872 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1210 1866 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1212 A866 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1214 185A 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1216 5466 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1218 726C 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1220 A872 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1222 2A00 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+1224 72A8 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1226 722A 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1228 18A8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1230 304E 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+1232 7E00 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1234 1218 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1236 666C 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1238 A800 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1240 6618 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1242 A830 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1244 4E0C 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1246 6618 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1248 6C Unknown opcode...
+1250 304E 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+1252 24A8 2nnn - CALL addr: call subroutine at nnn; The interpreter increments the sp, then puts the current pc on the top of the stack. The pc is then set to nnn.
+1254 722A 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+1256 1830 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1258 66A8 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1260 1E54 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1262 660C 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+1264 189C 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1266 A824 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1268 5454 5xy0 - SE Vx, Vy: Skip next instruction if Vx = Vy (increments pc by 2)
+1270 12A8 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+1272 4278 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+1274 C3C Unknown opcode...
+1276 A8AE Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1278 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1280 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1282 A8A8 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1284 A8FF Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+1286 0 00E0 - CLS: Clear the display
+1288 0 00E0 - CLS: Clear the display
+1290 0 00E0 - CLS: Clear the display
+1292 0 00E0 - CLS: Clear the display
+1294 0 00E0 - CLS: Clear the display
+1296 0 00E0 - CLS: Clear the display
+1298 0 00E0 - CLS: Clear the display
+1300 0 00E0 - CLS: Clear the display

@@ -1,0 +1,85 @@
+
+Allocation successful!
+
+The file content is now in memory...
+000 E0 00E0 - CLS: Clear the display
+002 A220 Annn - LD I, addr: Set I = nnn; The value of register I is set to nnn.
+004 6208 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+006 60F8 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+008 7008 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+010 6110 6xkk - LD Vx, byte: Set Vx = kk; The interprester puts the value kk into register Vx.
+012 4020 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+014 120E 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+016 D108 Dxyn - DRW Vx, Vy, nibble: The interpreter reads and displays n-byte sprite starting at memory location I at (Vx,Vy), set VF = collision.
+Sprites are XORed onto the existing screen. If this causes any pixels to be erased, VF is set to 1, otherwise it is set to 0.
+018 F21E Fx1E - ADD I, Vx: Set I = I + Vx; The value of I and Vx are added, and result is stored in I.
+020 7108 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+022 4130 4xkk - SNE Vx, byte: Skip next instruction if Vx != kk (increments pc by 2)
+024 1208 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+026 1210 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+028 0 00E0 - CLS: Clear the display
+030 0 00E0 - CLS: Clear the display
+032 0 00E0 - CLS: Clear the display
+034 0 00E0 - CLS: Clear the display
+036 18 Unknown opcode...
+038 3C3C 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+040 0 00E0 - CLS: Clear the display
+042 0 00E0 - CLS: Clear the display
+044 0 00E0 - CLS: Clear the display
+046 0 00E0 - CLS: Clear the display
+048 0 00E0 - CLS: Clear the display
+050 0 00E0 - CLS: Clear the display
+052 0 00E0 - CLS: Clear the display
+054 0 00E0 - CLS: Clear the display
+056 0 00E0 - CLS: Clear the display
+058 0 00E0 - CLS: Clear the display
+060 0 00E0 - CLS: Clear the display
+062 0 00E0 - CLS: Clear the display
+064 3E3F 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+066 3F3B 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+068 3938 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+070 3838 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+072 0 00E0 - CLS: Clear the display
+074 80C1 8xy1 - OR Vx, Vy: Set Vx = Vx OR Vy; Performs a bitwise OR on the values of Vx and Vy, then stores the result in Vx.
+076 E7FF 
+078 7E3C 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+080 1F Unknown opcode...
+082 FFF9 
+084 C080 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+086 303 Unknown opcode...
+088 80 00E0 - CLS: Clear the display
+090 E0F0 
+092 7838 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+094 1C1C 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+096 3838 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+098 393B 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+100 3F3F 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+102 3E3C 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+104 78FC 7xkk - ADD Vx, byte: Set Vx = Vx + kk; Adds the value kk to the value of register Vx, then stores the result in Vx.
+106 FECF 
+108 8703 8xy3 - XOR Vx, Vy: Set Vx = Vx XOR Vy; Performs a bitwise exclusive OR on the values of Vx and Vy, then stores the result in Vx.
+110 100 00E0 - CLS: Clear the display
+112 0 00E0 - CLS: Clear the display
+114 0 00E0 - CLS: Clear the display
+116 80E3 8xy3 - XOR Vx, Vy: Set Vx = Vx XOR Vy; Performs a bitwise exclusive OR on the values of Vx and Vy, then stores the result in Vx.
+118 FF7F 
+120 1C38 1nnn - JP addr: Jump to location nnn; The interpreter sets the pc to nnn.
+122 3870 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+124 F0E0 
+126 C000 Cxkk - RND Vx, byte: Set Vx = random byte AND kk; The interpreter generates a random number from 0 - 255, which is then ANDed with the value kk. The result is stored in Vx.
+128 3C18 3xkk - SE Vx, byte: Skip next instruction if Vx = kk (increments pc by 2)
+130 0 00E0 - CLS: Clear the display
+132 0 00E0 - CLS: Clear the display
+134 0 00E0 - CLS: Clear the display
+136 0 00E0 - CLS: Clear the display
+138 0 00E0 - CLS: Clear the display
+140 0 00E0 - CLS: Clear the display
+142 0 00E0 - CLS: Clear the display
+144 0 00E0 - CLS: Clear the display
+146 0 00E0 - CLS: Clear the display
+148 0 00E0 - CLS: Clear the display
+150 0 00E0 - CLS: Clear the display
+152 0 00E0 - CLS: Clear the display
+154 0 00E0 - CLS: Clear the display
+156 0 00E0 - CLS: Clear the display
+158 0 00E0 - CLS: Clear the display
