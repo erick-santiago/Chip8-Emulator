@@ -39,7 +39,8 @@ $ make
 
 Run:
 ```
-./testing_Chip8 ROMs/ROM-NAME-HERE
+$ ./testing_Chip8 ROMs/ROM-NAME-HERE
+Example: ./testing_Chip8 ROMs/WIPEOFF
 ```
 The ROMs are included in the `ROMs` directory.
 
