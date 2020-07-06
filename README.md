@@ -1,4 +1,4 @@
-## Chip8 Emulator
+## Chip8-Emulator
 A Chip8 Emulator written in C++
 
 ![SPACE INVADERS](Media/INVADERS.png "SPACE INVADERS")
