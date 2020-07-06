@@ -1,6 +1,6 @@
 /**
- * @brief  CHIP8 PROJECT | Test source file
- * @Author Erick Santiago (esaniago.dev@gmail.com)
+ * @brief  CHIP8 PROJECT 
+ * @Author esantiago
  * @date   May, 2018
  *
  * @description: This file is the Test source file for the Chip8 emu project 
