@@ -43,6 +43,9 @@ $ ./testing_Chip8 ROMs/ROM-NAME-HERE
 ```
 The ROMs are included in the `ROMs` directory.
 
+## Tested With
+Linux Mint 18.3 Sylvia
+
 ## References
 Resources used to bring this project to life, and special thanks:
 
