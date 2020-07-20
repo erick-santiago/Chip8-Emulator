@@ -8,7 +8,7 @@ A Chip8 Emulator written in C++
 ![WIPEOFF](Media/WIPEOFF.png "WIPEOFF")
 *WIPEOFF*
 
-CHIP-8 is an interpreted programming language orginally developed by Joseph Weisbecker. It was initially used on the COSMAC VIP and Telmac 1800 8-bit microcomputers in the mid-1970s. The CHIP-8 programs are run on a CHIP-8 virtual machine, the purpose of this was to allow video games to be more easily programmed on these computers (source wiki). 
+CHIP-8 is an interpreted programming language orginally developed by Joseph Weisbecker. It was initially used on the COSMAC VIP and Telmac 1800 8-bit microcomputers in the mid-1970s. The CHIP-8 programs are run on a CHIP-8 virtual machine, the purpose of which was to allow video games to be more easily programmed on these computers (source wiki). 
 
 ## Pre-reqs
 
