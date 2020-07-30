@@ -43,6 +43,17 @@ $ ./testing_Chip8 ROMs/ROM-NAME-HERE
 ```
 The ROMs are included in the `ROMs` directory.
 
+## Keyboard Controls
+
+The computers which originally used the Chip-8 Language had a 16-key hexadecimal keypad. Below is the mapping from the original keypad to your current (standard) keyboard.
+
+| Original | Keyboard |
+|----------|----------|
+| 1 2 3 C  | 1 2 3 4  |
+| 4 5 6 D  | Q W E R  |
+| 7 8 9 E  | A S D F  |
+| A 0 B F  | Z X C V  |
+
 ## Tested With
 Linux Mint 18.3 Sylvia
 
